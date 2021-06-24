@@ -4,10 +4,11 @@
 //Gets address of function from OpenGL library
 void GetOpenGLFunctions()
 {
-	HMODULE Moduleandle = GetModuleHandle(L"opengl32.dll");
-	if (Moduleandle != nullptr)
+	HMODULE ModuleHandle = nullptr;
+	ModuleHandle = GetModuleHandle(L"opengl32.dll");
+	if (ModuleHandle != nullptr)
 	{
-		glDrawElementsAddress = (DWORD)GetProcAddress(Moduleandle, "glDrawElements");
+		glDrawElementsAddress = (DWORD)GetProcAddress(ModuleHandle, "glDrawElements");
 	}
 	else
 	{
