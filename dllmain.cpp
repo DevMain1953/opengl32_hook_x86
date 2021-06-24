@@ -12,7 +12,7 @@ void GetOpenGLFunctions()
 	}
 	else
 	{
-		MessageBox(0, L"Module handle not found", L"Message", MB_OK);
+		MessageBox(0, L"Module handle not found", L"Error", MB_OK);
 	}
 }
 
