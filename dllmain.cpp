@@ -1,5 +1,4 @@
 #include "header.h"
-#include <iostream>
 
 //Gets address of function from OpenGL library
 void GetOpenGLFunctions()
